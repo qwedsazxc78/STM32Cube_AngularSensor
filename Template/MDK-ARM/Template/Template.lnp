@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"template\system_stm32f3xx.o"
+"template\gpio.o"
+"template\usart.o"
+"template\main.o"
+"template\stm32f3xx_hal_msp.o"
+"template\stm32f3xx_it.o"
+"template\startup_stm32f303xe.o"
+"template\stm32f3xx_hal_flash_ex.o"
+"template\stm32f3xx_hal_rcc.o"
+"template\stm32f3xx_hal_pwr_ex.o"
+"template\stm32f3xx_hal.o"
+"template\stm32f3xx_hal_rcc_ex.o"
+"template\stm32f3xx_hal_uart.o"
+"template\stm32f3xx_hal_uart_ex.o"
+"template\stm32f3xx_hal_i2c_ex.o"
+"template\stm32f3xx_hal_i2c.o"
+"template\stm32f3xx_hal_tim_ex.o"
+"template\stm32f3xx_hal_gpio.o"
+"template\stm32f3xx_hal_cortex.o"
+"template\stm32f3xx_hal_dma.o"
+"template\stm32f3xx_hal_pwr.o"
+"template\stm32f3xx_hal_tim.o"
+"template\stm32f3xx_hal_flash.o"
+--library_type=microlib --strict --scatter "Template\Template.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Template.map" -o Template\Template.axf
