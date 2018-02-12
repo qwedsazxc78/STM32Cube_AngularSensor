@@ -1,0 +1,87 @@
+Configuration	Stm32f303CBT6_AngularSensor
+STM32CubeMX 	4.23.0
+Date	02/12/2018
+MCU	STM32F303CBTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	OPAMP1 Output Single-Ended	ADC1_OPAMP_OUT1	VP_ADC1_OPAMP_OUT1
+ADC1	VOPAMP1 Channel	ADC1_OPAMP_INTERNAL1	VP_ADC1_OPAMP_INTERNAL1
+ADC2	OPAMP2 Output Single-Ended	ADC2_OPAMP_OUT2	VP_ADC2_OPAMP_OUT2
+ADC2	VOPAMP2 Channel	ADC2_OPAMP_INTERNAL2	VP_ADC2_OPAMP_INTERNAL2
+ADC3	OPAMP3 Output Single-ended	ADC3_OPAMP_OUT3	VP_ADC3_OPAMP_OUT3
+ADC3	VOPAMP3 Channel	ADC3_OPAMP_INTERNAL3	VP_ADC3_OPAMP_INTERNAL3
+ADC4	OPAMP4 Output Single-Ended	ADC4_OPAMP_OUT4	VP_ADC4_OPAMP_OUT4
+ADC4	VOPAMP4 Channel	ADC4_OPAMP_INTERNAL4	VP_ADC4_OPAMP_INTERNAL4
+OPAMP1	Standalone	OPAMP1_VINM	PA3
+OPAMP1	Standalone	OPAMP1_VINP	PA1
+OPAMP1	Standalone	OPAMP1_VOUT	PA2
+OPAMP2	Standalone	OPAMP2_VINM	PA5
+OPAMP2	Standalone	OPAMP2_VINP	PA7
+OPAMP2	Standalone	OPAMP2_VOUT	PA6
+OPAMP3	Standalone	OPAMP3_VINM	PB2
+OPAMP3	Standalone	OPAMP3_VINP	PB0
+OPAMP3	Standalone	OPAMP3_VOUT	PB1
+OPAMP4	Standalone	OPAMP4_VINM	PB10
+OPAMP4	Standalone	OPAMP4_VINP	PA4
+OPAMP4	Standalone	OPAMP4_VOUT	PB12
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PF0-OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PF1-OSC_OUT
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_IN	PC14-OSC32_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_OUT	PC15-OSC32_OUT
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM3	ITR2	TIM3_VS_ClockSourceITR	VP_TIM3_VS_ClockSourceITR
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC13	GPIO_Output	
+3	PC14-OSC32_IN	RCC_OSC32_IN	
+4	PC15-OSC32_OUT	RCC_OSC32_OUT	
+5	PF0-OSC_IN	RCC_OSC_IN	
+6	PF1-OSC_OUT	RCC_OSC_OUT	
+11	PA1	OPAMP1_VINP	
+12	PA2	OPAMP1_VOUT	
+13	PA3	OPAMP1_VINM	
+14	PA4	OPAMP4_VINP	
+15	PA5	OPAMP2_VINM	
+16	PA6	OPAMP2_VOUT	
+17	PA7	OPAMP2_VINP	
+18	PB0	OPAMP3_VINP	
+19	PB1	OPAMP3_VOUT	
+20	PB2	OPAMP3_VINM	
+21	PB10	OPAMP4_VINM	
+25	PB12	OPAMP4_VOUT	
+30	PA9	USART1_TX	
+31	PA10	USART1_RX	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : Stm32f303CBT6_AngularSensor
+Project Folder : C:\Users\admin\Documents\GitSource\Stm32F3_AngularSensor\Stm32f303CBT6_AngularSensor
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F3 V1.9.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+
