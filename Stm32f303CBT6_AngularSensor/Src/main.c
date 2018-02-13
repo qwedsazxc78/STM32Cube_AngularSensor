@@ -148,17 +148,19 @@ int main(void)
   while (1)
   {
 		
+		
+//    printf("ADC1 = %6d, %1.3fV \r\n", ADC1_U32, ADC1_FLOAT);
+//    printf("ADC2 = %6d, %1.3fV \r\n", ADC2_U32, ADC2_FLOAT);
+//    printf("ADC3 = %6d, %1.3fV \r\n", ADC3_U32, ADC3_FLOAT);
+//    printf("ADC4 = %6d, %1.3fV \r\n", ADC4_U32, ADC4_FLOAT);
+//    printf("\r\n");
+		printf("ADC: %6d %6d %6d %6d \r\n", ADC1_U32, ADC2_U32, ADC3_U32, ADC4_U32);
+
 		LED_TOGGLE(LD2_Pin);
-    printf("ADC1 = %6d, %1.3fV \r\n", ADC1_U32, ADC1_FLOAT);
-    printf("ADC2 = %6d, %1.3fV \r\n", ADC2_U32, ADC2_FLOAT);
-    printf("ADC3 = %6d, %1.3fV \r\n", ADC3_U32, ADC3_FLOAT);
-    printf("ADC4 = %6d, %1.3fV \r\n", ADC4_U32, ADC4_FLOAT);
-    printf("\r\n");
-		HAL_Delay(200);
+		HAL_Delay(1);
 	}
   /* USER CODE END WHILE */
 
-    
   /* USER CODE BEGIN 3 */
 
   
@@ -226,27 +228,9 @@ void SystemClock_Config(void)
 */
 static void MX_NVIC_Init(void)
 {
-  /* DMA2_Channel1_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA2_Channel1_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA2_Channel1_IRQn);
-  /* DMA2_Channel2_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA2_Channel2_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA2_Channel2_IRQn);
-  /* DMA2_Channel5_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA2_Channel5_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA2_Channel5_IRQn);
-  /* DMA1_Channel1_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
-  /* ADC1_2_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(ADC1_2_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(ADC1_2_IRQn);
-  /* ADC3_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(ADC3_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(ADC3_IRQn);
-  /* ADC4_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(ADC4_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(ADC4_IRQn);
+  /* TIM3_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(TIM3_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(TIM3_IRQn);
 }
 
 /* USER CODE BEGIN 4 */
@@ -277,6 +261,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     HAL_ADC_Stop_DMA(&hadc2);
     HAL_ADC_Stop_DMA(&hadc3);
     HAL_ADC_Stop_DMA(&hadc4);
+		
+		
   }
 }
 

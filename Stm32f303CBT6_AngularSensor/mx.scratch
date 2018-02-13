@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-<ProjectName>C:\Users\admin\Documents\GitSource\Stm32F3_AngularSensor\Stm32f303CBT6_AngularSensor\\Stm32f303CBT6_AngularSensor</ProjectName>
+<ProjectName>C:\Users\admin\Documents\GitSource\STM32Cube_AngularSensor\Stm32f303CBT6_AngularSensor\\Stm32f303CBT6_AngularSensor</ProjectName>
 <CMSIS>..\Drivers\CMSIS</CMSIS>
 <HAL_Driver>D:\Users\admin\STM32Cube\Repository\STM32Cube_FW_F3_V1.9.0\Drivers\CMSIS</HAL_Driver>
 
@@ -33,7 +33,7 @@
     	<board>custom</board>
 			
     <usedDebug>true</usedDebug>
-    	<debugprobe></debugprobe>
+    	<debugprobe>swd</debugprobe>
     <optimization></optimization>
     <icfloc>0</icfloc>
     <Adefines>

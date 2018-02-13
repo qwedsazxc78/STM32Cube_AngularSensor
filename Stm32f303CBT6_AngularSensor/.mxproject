@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/admin/Documents/GitSource/Stm32F3_AngularSensor/Stm32f303CBT6_AngularSensor/Inc
+HeaderPath=C:/Users/admin/Documents/GitSource/STM32Cube_AngularSensor/Stm32f303CBT6_AngularSensor/Inc
 HeaderFiles=stm32f3xx_it.h;stm32f3xx_hal_conf.h;main.h;gpio.h;adc.h;dma.h;opamp.h;tim.h;usart.h;
-SourcePath=C:/Users/admin/Documents/GitSource/Stm32F3_AngularSensor/Stm32f303CBT6_AngularSensor/Src
+SourcePath=C:/Users/admin/Documents/GitSource/STM32Cube_AngularSensor/Stm32f303CBT6_AngularSensor/Src
 SourceFiles=stm32f3xx_it.c;stm32f3xx_hal_msp.c;main.c;gpio.c;adc.c;dma.c;opamp.c;tim.c;usart.c;
 
 [PreviousLibFiles]
